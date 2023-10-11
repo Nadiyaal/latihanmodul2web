@@ -1,11 +1,13 @@
-function validate() {
-    var nama = document.getElementById("nama").value;
-    var email = document.getElementById("email").value;
-    var alamat = document.getElementById("alamat").value;
+function jumlahkan() {
+    var bilangan1 = document.getElementById("bilangan1").value;
+    var bilangan2 = document.getElementById("bilangan2").value;
   
-    if (nama !== "" && email !== "" && alamat !== "") {
-      alert("Anda sudah berhasil mengisi");
-    } else {
-      alert("Anda harus mengisi data secara lengkap!");
-    }
+    var hasil = parseInt(bilangan1) + parseInt(bilangan2);
+  
+    alert("Hasil Penjumlahan " + " =  " + hasil);
+  }
+  
+  function ulang() {
+    document.getElementById("bilangan1").value = "";
+    document.getElementById("bilangan2").value = "";
   }
